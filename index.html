@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form in HTML and CSS | codehal</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="form-box">
+        <h1>Login Now</h1>
+        <form action="" method="post" name="login" novalidate>
+            <div class="field-group">
+                <label for="uname">Username /E-Mail</label>
+                <input type="text" id="uname" name="uname" value="" required>
+                <i class="bx bx-user-pin"></i>
+            </div>
+            <div class="field-group">
+                <label for="pwd">Password</label>
+                <input type="text" name="pwd" id="pwd" value="" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="field-group">
+                <input type="checkbox" id="rem" name="rem" value="1">
+                <label for="rem">Remember login credentials</label>
+            </div>
+            <button type="submit" name="submit">Login</button>
+        </form>
+
+    </div>
+    <script src="./script.js" type="text/javascript"></script>
+
+    <!--
+    Data validations:
+    #1 Client-side validation (Form control)
+    -HTML5 validation (to ignore: novalidate attribute on form)
+    - JavaScript validation
+    #2 Server-slide validation (Authencation and conditions)
+    -Logical/Dynamic; i.e:PHP, Java, NodeJS, c#.NET etc.
+    #3 Advanced Server-slide validation (Data and metadata)
+    -Database level validation
+    -->
+
+</body>
+
+</html>
